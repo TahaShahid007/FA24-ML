@@ -1,0 +1,116 @@
+@relation names_marked_features
+
+@attribute Input {Amira,Kawkab,Faheem,Faisal,Adam,Omar,Layla,Dawud,Bashir,Afeefah,Asim,Ismail,Hussein,Bushra,Nida,Iman,Hala,Naeema,Fareed,Shakir,Ghaliya,BadrUddin,Aneesa,Sharifa,Aakifa,Ubaid,Husna,Arif,Safa,Faris,Aamir,Farida,Shahid,Huda,Mujtaba,Eisa,Nadia,Afra,Sharif,Aziza,Umair,Ahmad,Irfan,Shuaib,Amal,Murad,Furqan,Abida,Muneeb,Khadijah,Abeer,Areej,Habib,Urwa,Aida,Afia,Adeeb,Noor,Iffat,Nafisa,Farhan,Aatika,Burhan,Maleeha,Munira,Zeenat,Maymouna,Saadiya,Inaya,Firdous,Khalida,Luqman,Almas,Qamar,Uqbah,Falak,AbdulAlim,Arshad,Azra,Amjad,Khawlah,Akram,Hadiyya,Asiyah,Hashim,Jamila,Ajmal,Anas,Adeela,Aqeel,Raniya,Munir,Maha,Imran,Asma,Hamza,Bilal,Anees,Amina}
+@attribute Output {Negative,Positive}
+@attribute length numeric
+@attribute vovel_count numeric
+@attribute consonent_count numeric
+@attribute start_with_vovel numeric
+@attribute 'Len > 4' numeric
+@attribute even_len numeric
+@attribute first_vovel_position numeric
+@attribute first_consonent_position numeric
+@attribute ends_with_vovel numeric
+@attribute second_is_vovel numeric
+
+@data
+Amira,Negative,5,3,2,1,1,0,1,2,1,0
+Kawkab,Positive,6,2,4,0,1,1,2,1,0,1
+Faheem,Positive,6,3,3,0,1,1,2,1,0,1
+Faisal,Positive,6,3,3,0,1,1,2,1,0,1
+Adam,Negative,4,2,2,1,0,1,1,2,0,0
+Omar,Negative,4,2,2,1,0,1,1,2,0,0
+Layla,Positive,5,2,3,0,1,0,2,1,1,1
+Dawud,Positive,5,2,3,0,1,0,2,1,0,1
+Bashir,Positive,6,2,4,0,1,1,2,1,0,1
+Afeefah,Negative,7,4,3,1,1,0,1,2,0,0
+Asim,Negative,4,2,2,1,0,1,1,2,0,0
+Ismail,Negative,6,3,3,1,1,1,1,2,0,0
+Hussein,Positive,7,3,4,0,1,0,2,1,0,1
+Bushra,Positive,6,3,3,0,1,1,2,1,1,1
+Nida,Positive,4,3,1,0,0,1,2,1,1,1
+Iman,Negative,4,3,1,1,0,1,1,2,0,0
+Hala,Positive,4,3,1,0,0,1,2,1,1,1
+Naeema,Positive,6,4,2,0,1,1,2,1,1,1
+Fareed,Positive,6,3,3,0,1,1,2,1,0,1
+Shakir,Negative,6,3,3,0,1,1,3,1,0,0
+Ghaliya,Negative,7,4,3,0,1,0,3,1,1,0
+BadrUddin,Positive,9,3,6,0,1,0,2,1,0,1
+Aneesa,Negative,6,4,2,1,1,1,1,2,1,0
+Sharifa,Negative,7,3,4,0,1,0,3,1,1,0
+Aakifa,Positive,6,4,2,1,1,1,1,3,1,1
+Ubaid,Negative,5,3,2,1,1,0,1,2,0,0
+Husna,Positive,5,2,3,0,1,0,2,1,1,1
+Arif,Negative,4,2,2,1,0,1,1,2,0,0
+Safa,Positive,4,2,2,0,0,1,2,1,1,1
+Faris,Positive,5,2,3,0,1,0,2,1,0,1
+Aamir,Positive,5,3,2,1,1,0,1,3,0,1
+Farida,Positive,6,3,3,0,1,1,2,1,1,1
+Shahid,Negative,6,2,4,0,1,1,3,1,0,0
+Huda,Positive,4,2,2,0,0,1,2,1,1,1
+Mujtaba,Positive,7,3,4,0,1,0,2,1,1,1
+Eisa,Positive,4,3,1,1,0,1,1,3,1,1
+Nadia,Positive,5,3,2,0,1,0,2,1,1,1
+Afra,Negative,4,2,2,1,0,1,1,2,1,0
+Sharif,Negative,6,2,4,0,1,1,3,1,0,0
+Aziza,Negative,5,3,2,1,1,0,1,2,1,0
+Umair,Negative,5,3,2,1,1,0,1,2,0,0
+Ahmad,Negative,5,2,3,1,1,0,1,2,0,0
+Irfan,Negative,5,2,3,1,1,0,1,2,0,0
+Shuaib,Negative,6,3,3,0,1,1,3,1,0,0
+Amal,Negative,4,2,2,1,0,1,1,2,0,0
+Murad,Positive,5,2,3,0,1,0,2,1,0,1
+Furqan,Positive,6,2,4,0,1,1,2,1,0,1
+Abida,Negative,5,3,2,1,1,0,1,2,1,0
+Muneeb,Positive,6,3,3,0,1,1,2,1,0,1
+Khadijah,Negative,8,3,5,0,1,1,3,1,0,0
+Abeer,Negative,5,3,2,1,1,0,1,2,0,0
+Areej,Negative,5,3,2,1,1,0,1,2,0,0
+Habib,Positive,5,2,3,0,1,0,2,1,0,1
+Urwa,Negative,4,3,1,1,0,1,1,2,1,0
+Aida,Positive,4,3,1,1,0,1,1,3,1,1
+Afia,Negative,4,3,1,1,0,1,1,2,1,0
+Adeeb,Negative,5,3,2,1,1,0,1,2,0,0
+Noor,Positive,4,2,2,0,0,1,2,1,0,1
+Iffat,Negative,5,2,3,1,1,0,1,2,0,0
+Nafisa,Positive,6,3,3,0,1,1,2,1,1,1
+Farhan,Positive,6,2,4,0,1,1,2,1,0,1
+Aatika,Positive,6,4,2,1,1,1,1,3,1,1
+Burhan,Positive,6,2,4,0,1,1,2,1,0,1
+Maleeha,Positive,7,4,3,0,1,0,2,1,1,1
+Munira,Positive,6,2,4,0,1,1,2,1,1,1
+Zeenat,Positive,6,3,3,0,1,1,2,1,0,1
+Maymouna,Positive,8,4,4,0,1,1,2,1,1,1
+Saadiya,Positive,7,4,3,0,1,0,2,1,1,1
+Inaya,Negative,5,3,2,1,1,0,1,2,1,0
+Firdous,Positive,7,3,4,0,1,0,2,1,0,1
+Khalida,Negative,7,3,4,0,1,0,3,1,1,0
+Luqman,Positive,6,2,4,0,1,1,2,1,0,1
+Almas,Negative,5,2,3,1,1,0,1,2,0,0
+Qamar,Positive,5,2,3,0,1,0,2,1,0,1
+Abeer,Negative,5,3,2,1,1,0,1,2,0,0
+Uqbah,Negative,5,2,3,1,1,0,1,2,0,0
+Falak,Positive,5,3,2,0,1,0,2,1,0,1
+AbdulAlim,Negative,9,4,5,1,1,0,1,2,0,0
+Arshad,Negative,6,2,4,1,1,1,1,2,0,0
+Azra,Negative,4,2,2,1,0,1,1,2,1,0
+Amjad,Negative,5,2,3,1,1,0,1,2,0,0
+Khawlah,Negative,7,2,5,0,1,0,3,1,0,0
+Akram,Negative,5,2,3,1,1,0,1,2,0,0
+Hadiyya,Positive,7,3,4,0,1,0,2,1,1,1
+Asiyah,Negative,6,3,3,1,1,1,1,2,0,0
+Hashim,Positive,6,3,3,0,1,1,2,1,0,1
+Jamila,Positive,6,3,3,0,1,1,2,1,1,1
+Ajmal,Negative,5,2,3,1,1,0,1,2,0,0
+Anas,Negative,4,2,2,1,0,1,1,2,0,0
+Adeela,Negative,6,4,2,1,1,1,1,2,1,0
+Aqeel,Negative,5,3,2,1,1,0,1,2,0,0
+Raniya,Positive,6,3,3,0,1,1,2,1,1,1
+Munir,Positive,5,2,3,0,1,0,2,1,0,1
+Maha,Positive,4,2,2,0,0,1,2,1,1,1
+Imran,Negative,5,2,3,1,1,0,1,2,0,0
+Asma,Negative,4,2,2,1,0,1,1,2,1,0
+Hamza,Positive,5,2,3,0,1,0,2,1,1,1
+Bilal,Positive,5,2,3,0,1,0,2,1,0,1
+Anees,Negative,5,3,2,1,1,0,1,2,0,0
+Amina,Negative,5,3,2,1,1,0,1,2,1,0
